@@ -1,0 +1,160 @@
+$primary:#2947A9;
+$secondary:#F9995D;
+
+
+$neutral-50:#F6F8F7;
+$neutral-100:#E0E3EB;
+$neutral-200:#C2C7D6;
+$neutral-300:#A3AAC2;
+$neutral-400:#858EAD;
+$neutral-500:#667299;
+$neutral-600:#525B7A;
+$neutral-700:#3D445C;
+$neutral-800:#292E3D;
+$neutral-900:#14171F;
+
+$custom-theme-colors : (
+  "neutral-50":$neutral-50,
+  "neutral-100":$neutral-100,
+  "neutral-200":$neutral-200,
+  "neutral-300":$neutral-300,
+  "neutral-400":$neutral-400,
+  "neutral-500":$neutral-500,
+  "neutral-600":$neutral-600,
+  "neutral-700":$neutral-700,
+  "neutral-800":$neutral-800,
+  "neutral-900":$neutral-900,
+
+);
+$form-select-indicator: url('../images/icons/select-indicator.svg');
+$enable-negative-margins: true;
+
+// font family
+$font-family-base:  "Work Sans", sans-serif;
+
+// container
+$custom-container-max-widths: (
+  xxl:1216px,  
+);
+
+
+$nav-link-font-weight: 400;
+   
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%,
+  10: 10%,
+  20:20%,
+  30:30%
+);
+
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+
+
+
+
+// map merge
+$container-max-widths: map-merge($map1: $container-max-widths, $map2: $custom-container-max-widths);
+
+$theme-colors :map-merge($map1: $theme-colors, $map2:$custom-theme-colors);
+
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  
+);
+
+$custom-spacers: (
+  12:12px,
+  6: 1.25rem,     
+  7: 7rem,
+  8:112px,
+  30:1.875rem,
+  36:2.25rem,
+  40:2.5rem,
+  44:2.75rem,
+  50: 3.125rem,
+  57:3.563rem,
+  60:3.75rem,
+  74:4.625rem,
+  78:4.875rem,
+  85:5.3125rem, 
+  100: 6.25rem,
+  103:6.438rem,
+  122:7.265rem,
+  140:140px, 
+  200:12.5rem,   
+);
+
+// Merge custom spacers with Bootstrap default
+$spacers: map-merge($spacers, $custom-spacers);
+
+
+
+
+
+$zindex-levels: (
+  n1: -1,
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 3
+);
+$custom-zindex-levels:(
+  n2: -2,
+  n5: -5,
+
+);
+
+$zindex-levels: map-merge($map1: $zindex-levels, $map2: $custom-zindex-levels );
+
+
+// font-size
+$h1-font-size:                $font-size-base * 4.5;
+$h2-font-size:                $font-size-base * 3.75;
+$h3-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base * 1.125;
+$h7-font-size:                $font-size-base ;
+
+
+$cuctom_font-size: (
+    7: $h7-font-size
+   
+);
+$font-sizes: map-merge($map1: $font-sizes, $map2: $cuctom_font-size);
+
+
+
+
+
+// nav-items
+$nav-link-font-size: 1.125rem;
+
+// $navbar-toggler-focus-box-shadow: none;
+$navbar-nav-link-padding-y: 0.75rem;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+@import './header';
+@import './hero-section';
+@import './about';
+@import './serves';
+@import './consultation';
+@import './client';
+@import './projects';
+@import "./fact";
+@import './form';
+@import './footer'
+

@@ -1,0 +1,54 @@
+.hero-banner {
+
+
+  .grid-area {
+    grid-area: 1/1;
+  }
+
+  h1 {
+    width: 8em;
+
+    @media (max-width:575px) {
+      font-size: calc(1.25rem + 3.9vw);
+    }
+
+  }
+
+  .carousel-indicators {
+    margin-bottom: 0;
+
+    .custom-indicator {
+      width: .75rem !important;
+      height: .75rem;
+      border-radius: 50%;
+      background-color: $primary;
+
+    }
+
+  }
+
+  .custom-carousel-card {
+    width: min(416px, 35%);
+    position: absolute;
+    bottom: 38px;
+    right: 0px;
+    left: auto;
+    z-index: 9;
+
+  }
+
+  .carousel-btn-group {
+    width: min(416px, 35%);
+
+
+    .btn {
+      flex-grow: 1;
+      min-width: 6.25rem;
+      font-size: 18px;
+
+    }
+
+  }
+
+
+}

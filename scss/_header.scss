@@ -1,0 +1,25 @@
+header {
+  .nav-link {
+    color: $neutral-900;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+    
+      .navbar-toggler img{
+       width: 3rem;
+      }
+      .navbar-toggler{
+        border: none;
+       
+      }
+      .navbar-toggler:focus {
+        box-shadow: none;
+      }
+
+     
+     
+    }
+  

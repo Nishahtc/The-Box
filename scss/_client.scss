@@ -1,0 +1,27 @@
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  min-height: 180px;
+  position: relative;
+
+  .stat-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h2 {
+    margin-top: 60px; // push down below icon
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+}
